@@ -13,6 +13,7 @@
         <module>TimeStampCase</module>
         <module>SendMaxMessage</module>
         <module>kafka-groupId-partition</module>
+        <module>kafka-4.x-feature</module>
     </modules>
 
     <dependencies>
