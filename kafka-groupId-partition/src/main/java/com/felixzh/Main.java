@@ -1,10 +1,17 @@
-package com.felixzh.learning;
+package com.felixzh;
 
+/**
+ * @author felixzh
+ * <p>
+ * 消费者提交offset到Kafka的内部Topic： __consumer_offset，同一个消费者组groupID只能写一个分区，因为需要保序。
+ * 至于写哪个分区通过如下方式计算。
+ */
 public class Main {
     public static void main(String[] args) {
         // Kafka源码 GroupMetadataManager.scala
         // def partitionFor(groupId: String): Int = Utils.abs(groupId.hashCode) % groupMetadataTopicPartitionCount
         System.out.println(abs("console-consumer-46999".hashCode()) % 50);
+        System.out.println(abs("f2".hashCode()) % 50);
 
         // 8 -> console-consumer-46999
 

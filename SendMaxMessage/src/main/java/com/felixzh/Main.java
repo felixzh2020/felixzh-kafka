@@ -1,4 +1,4 @@
-package com.felixzh.learning;
+package com.felixzh;
 
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.ProducerConfig;

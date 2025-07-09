@@ -1,4 +1,4 @@
-package com.felixzh.learning;
+package com.felixzh;
 
 import org.apache.kafka.clients.CommonClientConfigs;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
